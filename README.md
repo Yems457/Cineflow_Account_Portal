@@ -7,17 +7,10 @@ The CineFlow Account Portal is a secure, user-facing application allowing users 
 * **User Authentication:** Personal Information, Username, Password, Register Account and Clear Form
 
 ### Installation
-1. Clone the repository
+  Clone the repository
    ```sh
-   git clone https://github.com/your-org/cineflow-portal.git
+   git clone https://github.com/Yems457/Cineflow_Account_Portal.git
    ```
-2.  Run the project
-   ```sh
-   npm run dev
-   ```
-npm install
-npm run dev
-```
 
 ## Usage
 
