@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CineFlow Creator Registration</title>
+</head>
+<body>
+
+    <header>
+        <h1>Join the CineFlow Creator Program</h1>
+    </header>
+
+    <main>
+        <section id="promo">
+            <h2>Welcome to Cineflow Creator Program</h2>
+            <video controls width="600">
+
+    <source src="Cineflow Registartion.mp4" type="video/mp4">
+</video>
+
+<audio controls>
+  <source src="cineflow.mp3" type="audio/mpeg">
+</audio>
+
+<img src="Cineflow Reg.png" alt="Cineflow Registration" width="200" height="200">
+            </section>
+
+        <section id="registration">
+            <form action="/submit-registration" method="POST" enctype="multipart/form-data">
+                  <h2>Registration</h2> 
+
+                  <label for="profile-picture">Upload Profile Picture:</label>
+   <input  type="file" id="profile-picture" name="profile_photo" accept="image/png, image/jpeg" required> <br><br>
+
+
+     <!-- Personal Information Section --> 
+                    <fieldset>
+                    <legend>Personal Information</legend>
+                    </fieldset>
+
+                   <label for="name">Full Name:</label><br>  
+  <input type="text" id="name" name="name" required><br><br>
+
+                   <label for="email">Email Address:</label><br>
+   <input type="email" id="userEmail" name="userEmail" required placeholder="example@cineflow.com"><br><br>
+
+                   <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username" pattern="[a-z A-Z 0-9]+" title="Username must only contain alphanumeric characters (no spaces)" required><br><br>
+
+                  <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required minlength="12"><br><br>
+
+  <!--  Must be born on or before April 26, 2008 (18+ as of 2026) -->
+             <label for="date of birth">Date of birth:</label>    
+<input type="date" id="birthday" name="birthday" max="2008-04-26"> <br><br>
+
+  <!-- Channel Information Section -->
+                <fieldset>
+               <legend>Channel Details</legend>
+
+
+<!-- Range input with 0 to 10 range -->
+             <label for="uploadVolume">Expected Weekly Upload Volume (0-10):</label><br>
+  <input type="range"  id="uploadVolume" name="uploadVolume" min="0" max="10" step="1" value="5" oninput="volumeOutput.value = uploadVolume.value">
+
+         <fieldset>
+                    <legend>Cineflow Channel:</legend>
+                     <label><input type="checkbox" name="genre" value="tech"> Tech</label><br>
+                    <label><input type="checkbox" name="genre" value="lifestyle"> Lifestyle</label><br>
+                    <label><input type="checkbox" name="genre" value="gaming"> Gaming</label><br>
+                    <label><input type="checkbox" name="genre" value="education"> Education</label><br>
+        
+                    </fieldset>
+
+
+                <div class="form-actions">
+                    <button type="submit">Register Account</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
